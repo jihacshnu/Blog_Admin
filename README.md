@@ -13,7 +13,7 @@ features such as creating, deleting, updating, and reading posts and comments. U
 ![Screenshot 2024-04-19 205404](https://github.com/jihacshnu/Blog_Admin/blob/c6cf9b6b390a590dc2bbc0aeea118b56fc8565a4/Screenshot%20from%202025-02-21%2020-41-20.png)
 
 *Admin Dashboard for managing posts and comments*
-![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
+![Screenshot 2024-04-19 215303](https://github.com/jihacshnu/Blog_Admin/blob/3c434fa2ac6bef7a3f78c8e2a6c2d4d35d9ec2a2/Screenshot%20from%202025-02-21%2020-43-02.png)
 
 ## Installation
 
