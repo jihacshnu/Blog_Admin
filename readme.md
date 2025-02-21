@@ -1,112 +1,75 @@
-# FullStack Blog App with Admin Dashboard
+# MERN Stack Blog Website with Admin Dashboard
 
-![React Logo](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+Welcome to the MERN Stack Blog Website! This project is a full-stack application built using MongoDB, Express.js, React, and Node.js. 
+It features a blog where users can read posts, comment on them, and like comments. Additionally, an admin dashboard is available with 
+features such as creating, deleting, updating, and reading posts and comments. Users can upload their profile picture, and Firebase is used to store these images.
 
-## 📋 <a name="table">Table of Contents</a>
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
+## Demo
+live demo [Website](https://blog-app-64zh.onrender.com), [Video](https://www.youtube.com/watch?v=UOEPYxzzwO8)
+
+## Screenshots
+
+*Homepage of the Website*
+![Screenshot 2024-04-19 205404](https://github.com/ashishsen003/blog-app/assets/112822104/fe66473a-8da9-4c0d-8f19-ef6ce3096238)
+
+*Admin Dashboard for managing posts and comments*
+![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
+### Frontend Setup
+2. Navigate to the frontend folder `cd frontend`
+3. Install dependencies `npm install or yarn install`
+4. Start the frontend Server `npm run dev`
+5. This will run frontend server on `http://localhost:5173`
+### Backend Setup
+6. Navigate to the backend folder `cd backend`
+7. Install dependencies `npm install or yarn install`
+8. Start the backend Server `npm run dev`
+9. This will run backend server on `PORT: 3000`
 
 
-## <a name="introduction">🤖 Introduction</a>
+## Usage
 
-Welcome to the Fullstack blog platform with a dynamic dashboard! Seamlessly blending MongoDB, Express.js, React, and Node.js, the project offers a powerful suite of features for creating, managing, and sharing content. With user authentication, intuitive CRUD operations, and a sleek dashboard interface, it's your all-in-one solution for modern web publishing.
+1. Visit the website and browse through the posts.
+2. Sign up with your Google account or create a new account.
+3. You can upload and change your profile picture.
+4. Explore the dark mode and light mode themes.
+5. Leave comments on posts and like other user's comments.
+6. Access the admin dashboard by logging in with the following credentials:
+   - **Email:** admin@gmail.com
+   - **Password:** admin@blog
+7. In admin dashboard you can create a new post and can see all the users, posts and comments.
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## Technologies Used
 
 - React
-- React Router Dom
-- Redux Toolkit
 - Node.js
+- Express.js
 - MongoDB
-- Express
 - Tailwind CSS
+- Flowbite react
+- Google firebase
 
-## <a name="features">🔋 Features</a>
+## Features
 
-👉 **Advanced Search Functionality**: Users can search by title, limit results, and sort through a modern sidebar, utilizing cutting-edge search query techniques with MongoDB.
-## ![21](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/db8e90f3-089f-41de-bf6d-658cb5419e92)
+- User authentication (sign up, login) with Google OAuth
+- Profile picture upload
+- Dark mode and light mode themes
+- Reading, commenting, and liking comments
+- Admin dashboard for managing posts and comments
 
-👉 **Dark Mode for Reading Fanatics**: With the click of a button, toggle between light and dark themes for comfortable reading in any environment. Explore our extensive collection of content in a visually stunning interface designed to enhance your reading pleasure.
-## ![darkmode](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/a9190bc8-0ea6-4fbd-b203-1f1cd19dd801)
+## Configuration
 
-👉 **Google OAuth integration**: Seamlessly integrate your Google account to access our platform in seconds, ensuring a hassle-free registration process.
-## ![signup](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/9526b2a7-9272-4cd0-a6e8-8d280e14dabb)
+- Set up environment variables as specified in `.env.example`:
+  - `VITE_FIREBASE_API_KEY` = 'your-firebase-api-key'
+  - `MONGO` = 'your-mongodb-uri'
+  - `JWT_SECRET` = 'your-jwt-secret'
+- Copy the `.env.example` file to a new file named `.env`.
+- Replace the placeholder values in the `.env` file with your actual environment variables.
+- Never commit your `.env` file to version control to avoid exposing sensitive information.
 
-👉 **Edit your Profile**: Tailor your personal information, preferences, and avatar effortlessly to reflect your unique identity.
-## ![profile](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/97958416-025f-4f2e-af06-5f8df88c0b23)
+## Contributing
 
-👉 **Sleek Dashboard**: Effortlessly manage posts, users, and comments with intuitive tools and real-time updates.
-## ![dashboard](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/292f725a-f514-4604-a9d7-a4a799e17d13)
-
-👉 **Create Post**: Engage your audience with captivating content, whether it's a thought-provoking article, a captivating story, or an inspiring message.
-## ![createpost](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/1c30be61-e0f8-4bba-b9ff-e0b58de39c34)
-
-👉 **Delete Post, Users and Comments**: Remove outdated or unwanted posts, manage user accounts, and maintain a clutter-free environment by deleting comments.
-## ![deletepost](https://github.com/Akashh141/MERN-Blog-App-with-Dashboard/assets/123226444/df3cda3c-a684-433c-aabb-b1a50494f4bf)
-
-👉 **Mobile Friendly**:Seamlessly transition between devices as it adapts to your screen size, ensuring a smooth and intuitive browsing experience on smartphones
-## 
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-- **Cloning the Repository**
-
-```bash
-git@github.com:Akashh141/FullStack-Blog-App-with-Admin-Dashboard.git
-cd FullStack-Blog-App-with-Admin-Dashboard
-
-**Installation**
-
-Install the project dependencies using npm:
-
-```bash
-npm install
-```
-
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-MONGO=
-JWT_SECRET= 
-```
-Create one more env file named `.env` in the client folder and add the following content:
-
-```env
-VITE_FIREBASE_API_KEY = 
-```
-
-Replace the placeholder values with your actual  credentials.
-
-**Running the Project**
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-## License
-
-The module is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-
+Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests.
